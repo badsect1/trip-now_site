@@ -286,9 +286,38 @@ try {
     const balancedJson = extractBalancedJson(cleanJson);
     article = JSON.parse(balancedJson);
   } catch (parseErr) {
-    fs.writeFileSync(path.join(rootDir, 'debug_raw_gemini.txt'), cleanJson, 'utf-8');
-    console.error('⚠️ JSON.parse 에러 발생! debug_raw_gemini.txt에 저장했습니다. 에러:', parseErr.message);
-    throw parseErr;
+    console.warn('⚠️ 표준 JSON.parse 실패, 정규식 추출기로 안전 복구 시도...');
+    try {
+      const titleMatch = cleanJson.match(/"title"\s*:\s*"([^"]+)"/);
+      const slugMatch = cleanJson.match(/"slug"\s*:\s*"([^"]+)"/);
+      const catIdMatch = cleanJson.match(/"category_id"\s*:\s*(\d+)/);
+      const catNameMatch = cleanJson.match(/"category_name"\s*:\s*"([^"]+)"/);
+      const focusMatch = cleanJson.match(/"focus_keyword"\s*:\s*"([^"]+)"/);
+      const metaMatch = cleanJson.match(/"meta_description"\s*:\s*"([^"]+)"/);
+      
+      // content_html은 "content_html"\s*:\s*" 부터 뒤쪽의 "\s*} 까지 매칭
+      const contentMatch = cleanJson.match(/"content_html"\s*:\s*"([\s\S]*?)"\s*\}/);
+
+      if (titleMatch && slugMatch && contentMatch) {
+        article = {
+          title: titleMatch[1],
+          slug: slugMatch[1],
+          category_id: catIdMatch ? parseInt(catIdMatch[1], 10) : 1,
+          category_name: catNameMatch ? catNameMatch[1] : '테슬라 최신 뉴스',
+          tags: ["테슬라", "전기차", "자율주행", "모빌리티"],
+          focus_keyword: focusMatch ? focusMatch[1] : '테슬라',
+          meta_description: metaMatch ? metaMatch[1] : '',
+          content_html: contentMatch[1].replace(/\\"/g, '"').replace(/\\n/g, '\n')
+        };
+        console.log('✅ 정규식 기반 안전 복구 성공!');
+      } else {
+        throw new Error('정규식 추출 실패');
+      }
+    } catch (fallbackErr) {
+      fs.writeFileSync(path.join(rootDir, 'debug_raw_gemini.txt'), cleanJson, 'utf-8');
+      console.error('⚠️ JSON 파싱 및 복구 실패:', parseErr.message);
+      throw parseErr;
+    }
   }
   article.created_at = new Date().toISOString();
   article.date_formatted = kstDate;
