@@ -56,9 +56,10 @@ async function fetchTeslaNews() {
   return new Promise((resolve) => {
     const feedUrl = 'https://news.google.com/rss/search?q=Tesla+OR+%ED%85%8C%EC%8A%AC%EB%9D%BC&hl=ko&gl=KR&ceid=KR:ko';
     https.get(feedUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } }, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
+      const chunks = [];
+      res.on('data', chunk => chunks.push(chunk));
       res.on('end', () => {
+        const data = Buffer.concat(chunks).toString('utf-8');
         const titles = [];
         const matches = data.matchAll(/<item>[\s\S]*?<title>(.*?)<\/title>/g);
         for (const m of matches) {
@@ -181,10 +182,11 @@ async function callSingleGemini(modelName, promptText) {
         'Content-Type': 'application/json'
       }
     }, (res) => {
-      let body = '';
-      res.on('data', chunk => body += chunk);
+      const chunks = [];
+      res.on('data', chunk => chunks.push(chunk));
       res.on('end', () => {
         try {
+          const body = Buffer.concat(chunks).toString('utf-8');
           const json = JSON.parse(body);
           if (json.error) {
             reject(new Error(`[${modelName}] ${json.error.message || 'Gemini API Error'}`));
