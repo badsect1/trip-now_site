@@ -1,5 +1,141 @@
 [
   {
+    "id": 316,
+    "title": "테슬라의 차세대 제조 혁명: 언박스드 프로세스와 2만 달러 보급형 플랫폼의 실체",
+    "slug": "tesla-unboxed-process-and-model-2-strategy",
+    "category_id": 1,
+    "category_name": "테슬라 최신 뉴스",
+    "url": "https://trip-now.kr/tesla-unboxed-process-and-model-2-strategy/",
+    "tags": [
+      "테슬라",
+      "기가팩토리",
+      "모델2",
+      "언박스드",
+      "전기차캐즘"
+    ],
+    "published_at": "2026-09-25T06:02:48.331Z",
+    "date_formatted": "2026년 9월 25일"
+  },
+  {
+    "id": 315,
+    "title": "슈퍼차저 V4와 NACS 생태계의 패권: 현대·포드·GM 합류가 몰고 올 전기차 충전 혁명",
+    "slug": "tesla-supercharger-v4-nacs-ecosystem-analysis",
+    "category_id": 214,
+    "category_name": "배터리 & 충전",
+    "url": "https://trip-now.kr/tesla-supercharger-v4-nacs-ecosystem-analysis/",
+    "tags": [
+      "테슬라",
+      "슈퍼차저",
+      "NACS",
+      "전기차충전",
+      "전기차인프라"
+    ],
+    "published_at": "2026-09-25T06:02:13.555Z",
+    "date_formatted": "2026년 9월 25일"
+  },
+  {
+    "id": 314,
+    "title": "테슬라 옵티머스 2세대와 기가팩토리 무인 생산의 미래: 휴머노이드 로봇이 바꿀 제조업의 판도",
+    "slug": "tesla-optimus-gen2-and-unmanned-gigafactory-future",
+    "category_id": 215,
+    "category_name": "로보택시 & 미래 비전",
+    "url": "https://trip-now.kr/tesla-optimus-gen2-and-unmanned-gigafactory-future/",
+    "tags": [
+      "테슬라",
+      "옵티머스",
+      "휴머노이드",
+      "기가팩토리",
+      "자동화"
+    ],
+    "published_at": "2026-09-25T06:01:38.985Z",
+    "date_formatted": "2026년 9월 25일"
+  },
+  {
+    "id": 313,
+    "title": "테슬라 사이버트럭 1년 실운행 리포트: 48V 아키텍처와 스티어 바이 와이어의 혁신과 과제",
+    "slug": "tesla-cybertruck-1-year-owner-report-analysis",
+    "category_id": 213,
+    "category_name": "모델별 심층 가이드",
+    "url": "https://trip-now.kr/tesla-cybertruck-1-year-owner-report-analysis/",
+    "tags": [
+      "테슬라",
+      "사이버트럭",
+      "48V아키텍처",
+      "스티어바이와이어",
+      "전기차리뷰"
+    ],
+    "published_at": "2026-09-25T06:01:04.615Z",
+    "date_formatted": "2026년 9월 25일"
+  },
+  {
+    "id": 312,
+    "title": "테슬라 하드웨어 4.0(HW4)과 HW3의 격차: 자율주행 성능의 임계점과 오너의 선택 기준",
+    "slug": "tesla-hw4-vs-hw3-analysis-autonomous-driving",
+    "category_id": 212,
+    "category_name": "FSD & 자율주행",
+    "url": "https://trip-now.kr/tesla-hw4-vs-hw3-analysis-autonomous-driving/",
+    "tags": [
+      "테슬라",
+      "HW4",
+      "HW3",
+      "FSD",
+      "자율주행"
+    ],
+    "published_at": "2026-09-25T06:00:43.835Z",
+    "date_formatted": "2026년 9월 25일"
+  },
+  {
+    "id": 311,
+    "title": "4680 배터리 건식 전극 공정의 진실: 테슬라 제조 혁명과 원가 절감의 마스터플랜",
+    "slug": "tesla-4680-dry-electrode-manufacturing-innovation",
+    "category_id": 214,
+    "category_name": "배터리 & 슈퍼차저",
+    "url": "https://trip-now.kr/tesla-4680-dry-electrode-manufacturing-innovation/",
+    "tags": [
+      "테슬라",
+      "4680배터리",
+      "건식전극",
+      "전기차원가",
+      "기가팩토리"
+    ],
+    "published_at": "2026-09-25T06:00:03.013Z",
+    "date_formatted": "2026년 9월 25일"
+  },
+  {
+    "id": 310,
+    "title": "테슬라 사이버캡(Cybercab)과 로보택시 생태계: 도시 이동의 패러다임을 바꿀 20센트의 혁명",
+    "slug": "tesla-cybercab-robotaxi-ecosystem-future-mobility",
+    "category_id": 215,
+    "category_name": "로보택시 & 미래 비전",
+    "url": "https://trip-now.kr/tesla-cybercab-robotaxi-ecosystem-future-mobility/",
+    "tags": [
+      "테슬라",
+      "사이버캡",
+      "로보택시",
+      "자율주행",
+      "모빌리티"
+    ],
+    "published_at": "2026-09-25T05:59:42.574Z",
+    "date_formatted": "2026년 9월 25일"
+  },
+  {
+    "id": 309,
+    "title": "테슬라 모델 Y 주니퍼(Juniper) 페이스리프트: 디자인 혁신과 승차감의 재발견",
+    "slug": "tesla-model-y-juniper-facelift-analysis",
+    "category_id": 213,
+    "category_name": "모델별 심층 가이드",
+    "url": "https://trip-now.kr/tesla-model-y-juniper-facelift-analysis/",
+    "tags": [
+      "테슬라",
+      "모델Y",
+      "주니퍼",
+      "페이스리프트",
+      "전기차"
+    ],
+    "published_at": "2026-09-25T05:59:16.449Z",
+    "date_formatted": "2026년 9월 25일"
+  },
+  {
     "id": 307,
     "title": "테슬라 FSD V13의 진화: 엔드투엔드 신경망이 열어갈 완전 무인화의 변곡점",
     "slug": "tesla-fsd-v13-end-to-end-neural-network-analysis",

@@ -2,8 +2,8 @@ name: Daily Auto Tesla Chronicles Post
 
 on:
   schedule:
-    # 매일 한국 시간 오전 8시 30분 (UTC 23:30) 자동 실행
-    - cron: '30 23 * * *'
+    # 매일 한국 시간 오전 9시 00분 (UTC 00:00) 자동 실행
+    - cron: '0 0 * * *'
   workflow_dispatch: # GitHub 웹 콘솔에서 수동으로 'Run workflow' 클릭 실행 가능
 
 jobs:

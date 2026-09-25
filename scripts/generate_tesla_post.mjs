@@ -75,11 +75,17 @@ async function fetchTeslaNews() {
   });
 }
 
+// 명령행 인자에서 특정 카테고리 지정 가능 (예: --category=213)
+const targetCategoryArg = process.argv.find(a => a.startsWith('--category='));
+const targetCategoryId = targetCategoryArg ? parseInt(targetCategoryArg.split('=')[1], 10) : null;
+if (targetCategoryId) {
+  console.log(`🎯 지정된 타겟 카테고리 ID: ${targetCategoryId}`);
+}
+
 const liveNews = await fetchTeslaNews();
 console.log(`📰 실시간 테슬라 뉴스 헤드라인 ${liveNews.length}건 수집 완료:`);
 liveNews.slice(0, 3).forEach(n => console.log(`   - ${n}`));
 
-// 5. 프롬프트 생성 (애드센스 승인 최적화 E-E-A-T 구조)
 // 오늘 날짜
 const now = new Date();
 const kstDate = new Intl.DateTimeFormat('ko-KR', {
@@ -88,6 +94,10 @@ const kstDate = new Intl.DateTimeFormat('ko-KR', {
   month: 'long',
   day: 'numeric'
 }).format(now);
+
+const categoryHint = targetCategoryId 
+  ? `[특별 지시]: 이번 칼럼은 반드시 카테고리 ID ${targetCategoryId} 에 해당하는 주제로 작성해야 합니다.`
+  : `[특별 지시]: 5대 카테고리 중 아직 글이 적은 분야를 우선 선정하여 작성해주세요.`;
 
 const prompt = `
 당신은 전기차 및 모빌리티 혁신의 선두주자 테슬라(Tesla)를 심층 분석하는 전문 매거진 "테슬라 연대기 (Tesla Chronicles)"의 수석 자동차 전문 테크 에디터입니다.
@@ -110,6 +120,8 @@ ${existingTitles || '없음 (첫 번째 칼럼)'}
 - 213: 모델별 심층 가이드 (model-guide)
 - 214: 배터리 & 슈퍼차저 (battery-charging)
 - 215: 로보택시 & 미래 비전 (robotaxi-ai)
+
+${categoryHint}
 
 [필수 작성 및 형식 규격]:
 1. 본문은 이미지를 전혀 사용하지 않습니다. 이미지 없이도 독자가 몰입하고 구글 평가단이 감탄할 수 있도록 풍부한 텍스트 서식, 통계 수치, 체계적 비교표, 인포 박스를 활용해야 합니다.
@@ -280,6 +292,42 @@ try {
   }
   article.created_at = new Date().toISOString();
   article.date_formatted = kstDate;
+
+  // 자동 목차(TOC) 생성 및 앵커 태그 주입
+  function injectTableOfContents(html) {
+    let headingIndex = 0;
+    const tocItems = [];
+
+    const modifiedHtml = html.replace(/<(h[23])([^>]*)>(.*?)<\/\1>/gi, (match, tag, attrs, text) => {
+      headingIndex++;
+      const cleanText = text.replace(/<[^>]+>/g, '').trim();
+      const anchorId = `toc-heading-${headingIndex}`;
+      const levelClass = tag.toLowerCase() === 'h3' ? 'toc-h3' : 'toc-h2';
+      tocItems.push(`<li class="${levelClass}"><a href="#${anchorId}">${cleanText}</a></li>`);
+      return `<${tag}${attrs} id="${anchorId}">${text}</${tag}>`;
+    });
+
+    if (tocItems.length < 2) {
+      return html;
+    }
+
+    const tocBox = `
+<div class="tesla-toc-box">
+  <div class="tesla-toc-title">📑 목차 (Table of Contents)</div>
+  <ul class="tesla-toc-list">
+    ${tocItems.join('\n    ')}
+  </ul>
+</div>`;
+
+    if (modifiedHtml.includes('</div>')) {
+      const summaryEnd = modifiedHtml.indexOf('</div>');
+      return modifiedHtml.slice(0, summaryEnd + 6) + '\n' + tocBox + '\n' + modifiedHtml.slice(summaryEnd + 6);
+    }
+    return tocBox + '\n' + modifiedHtml;
+  }
+
+  // 목차 주입 적용
+  article.content_html = injectTableOfContents(article.content_html);
 
   console.log(`\n✅ 칼럼 생성 완료!`);
   console.log(`📌 제목: ${article.title}`);
