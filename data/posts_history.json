@@ -1,5 +1,22 @@
 [
   {
+    "id": 328,
+    "title": "[테슬라 연대기] 모델 3 하이랜드 롱레인지 vs RWD: 배터리 기술과 주행 효율의 정밀 분석",
+    "slug": "tesla-model-3-highland-long-range-vs-rwd-deep-dive",
+    "category_id": 213,
+    "category_name": "모델별 심층 가이드",
+    "url": "https://trip-now.kr/tesla-model-3-highland-long-range-vs-rwd-deep-dive/",
+    "tags": [
+      "테슬라",
+      "모델3하이랜드",
+      "전기차비교",
+      "LFP배터리",
+      "NCM배터리"
+    ],
+    "published_at": "2026-09-26T03:27:57.229Z",
+    "date_formatted": "2026년 9월 26일"
+  },
+  {
     "id": 317,
     "title": "[테슬라 연대기] 기가팩토리 글로벌 생산망의 진화와 차세대 2만 달러 보급형 플랫폼 전략",
     "slug": "tesla-global-gigafactory-strategy-and-next-gen-affordable-ev",
