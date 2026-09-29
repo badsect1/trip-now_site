@@ -1,5 +1,22 @@
 [
   {
+    "id": 329,
+    "title": "[테슬라 연대기] 휴머노이드 로봇 옵티머스 2세대: 기가팩토리 무인 생산의 게임 체인저",
+    "slug": "tesla-optimus-gen2-factory-automation-analysis",
+    "category_id": 215,
+    "category_name": "로보택시 & 미래 비전",
+    "url": "https://trip-now.kr/tesla-optimus-gen2-factory-automation-analysis/",
+    "tags": [
+      "테슬라",
+      "옵티머스",
+      "휴머노이드",
+      "기가팩토리",
+      "자동화"
+    ],
+    "published_at": "2026-09-29T04:10:18.452Z",
+    "date_formatted": "2026년 9월 29일"
+  },
+  {
     "id": 328,
     "title": "[테슬라 연대기] 모델 3 하이랜드 롱레인지 vs RWD: 배터리 기술과 주행 효율의 정밀 분석",
     "slug": "tesla-model-3-highland-long-range-vs-rwd-deep-dive",
