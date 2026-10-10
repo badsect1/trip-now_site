@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import shlex
 import paramiko
 from pathlib import Path
 
@@ -92,20 +93,16 @@ try:
         "_yoast_wpseo_focuskw": focus_kw,
         "_yoast_wpseo_title": f"{title} | 테슬라 연대기"
     }
-    meta_json_str = json.dumps(meta_dict).replace('"', '\\"')
-
-    # 제목 이스케이프 (single quote 안전 처리)
-    safe_title = title.replace("'", "'\\''")
-    safe_tags = tags.replace("'", "'\\''")
+    meta_json_str = json.dumps(meta_dict, ensure_ascii=False)
 
     create_cmd = (
-        f"{WP} post create {remote_content_file} "
-        f"--post_title='{safe_title}' "
-        f"--post_name='{slug}' "
-        f"--post_category={category_id} "
-        f"--tags_input='{safe_tags}' "
+        f"{WP} post create {shlex.quote(remote_content_file)} "
+        f"--post_title={shlex.quote(title)} "
+        f"--post_name={shlex.quote(slug)} "
+        f"--post_category={int(category_id)} "
+        f"--tags_input={shlex.quote(tags)} "
         f"--post_status=publish "
-        f"--meta_input='{meta_json_str}' "
+        f"--meta_input={shlex.quote(meta_json_str)} "
         f"--porcelain"
     )
 
@@ -121,6 +118,7 @@ try:
 
     if not post_id:
         print(f"❌ 포스트 생성 실패. WP-CLI 출력:\n{out}")
+        run_cmd(f"rm -f {shlex.quote(remote_content_file)}")
         sys.exit(1)
 
     post_url = f"{SITE_URL}/{slug}/"
@@ -132,7 +130,7 @@ try:
     print("🧹 워드프레스 & 라이트스피드 캐시 초기화 완료")
 
     # 원격 임시 파일 정리
-    run_cmd(f"rm -f {remote_content_file}")
+    run_cmd(f"rm -f {shlex.quote(remote_content_file)}")
 
     # 7. posts_history.json 업데이트
     history_path = root_dir / 'data' / 'posts_history.json'
