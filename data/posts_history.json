@@ -1,5 +1,21 @@
 [
   {
+    "id": 340,
+    "title": "[테슬라 연대기] 테슬라 모델 Y 주니퍼(Juniper) 페이스리프트: 승차감 개선과 디자인 혁신의 실체 분석",
+    "slug": "tesla-model-y-juniper-facelift-analysis",
+    "category_id": 213,
+    "category_name": "모델별 심층 가이드",
+    "url": "https://trip-now.kr/tesla-model-y-juniper-facelift-analysis/",
+    "tags": [
+      "테슬라",
+      "전기차",
+      "자율주행",
+      "모빌리티"
+    ],
+    "published_at": "2026-10-11T03:55:37.633Z",
+    "date_formatted": "2026년 10월 11일"
+  },
+  {
     "id": 339,
     "title": "[테슬라 연대기] 유럽 FSD 명칭 변경의 이면: 테슬라 자율주행 전략의 현실적 타협과 글로벌 표준화의 과제",
     "slug": "tesla-fsd-europe-branding-strategy-analysis",
