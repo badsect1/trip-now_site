@@ -1,5 +1,22 @@
 [
   {
+    "id": 342,
+    "title": "[테슬라 연대기] 사이버캡(Cybercab)이 그리는 도심 모빌리티의 미래: 20센트의 혁명과 로보택시 생태계",
+    "slug": "tesla-cybercab-robotaxi-future-mobility-analysis",
+    "category_id": 215,
+    "category_name": "로보택시 & 미래 비전",
+    "url": "https://trip-now.kr/tesla-cybercab-robotaxi-future-mobility-analysis/",
+    "tags": [
+      "테슬라",
+      "사이버캡",
+      "로보택시",
+      "자율주행",
+      "모빌리티"
+    ],
+    "published_at": "2026-10-13T05:25:25.106Z",
+    "date_formatted": "2026년 10월 13일"
+  },
+  {
     "id": 341,
     "title": "[테슬라 연대기] 4680 배터리 건식 전극 공정의 진실: 테슬라 제조 혁명과 원가 절감의 마스터플랜",
     "slug": "tesla-4680-dry-electrode-manufacturing-strategy",
