@@ -1,5 +1,22 @@
 [
   {
+    "id": 345,
+    "title": "[테슬라 연대기] 테슬라 하드웨어 4.0(HW4) vs HW3: 자율주행 성능의 임계점과 오너의 선택 기준",
+    "slug": "tesla-hardware-4-vs-3-analysis-autonomous-driving",
+    "category_id": 212,
+    "category_name": "FSD & 자율주행",
+    "url": "https://trip-now.kr/tesla-hardware-4-vs-3-analysis-autonomous-driving/",
+    "tags": [
+      "테슬라",
+      "HW4",
+      "자율주행",
+      "FSD",
+      "테슬라연대기"
+    ],
+    "published_at": "2026-10-16T03:04:52.428Z",
+    "date_formatted": "2026년 10월 16일"
+  },
+  {
     "id": 344,
     "title": "[테슬라 연대기] 테슬라와 스페이스X의 운명적 합병: 에너지·모빌리티·우주 제국의 탄생과 시너지",
     "slug": "tesla-spacex-merger-analysis-2026",
