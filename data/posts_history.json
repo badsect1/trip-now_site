@@ -1,5 +1,21 @@
 [
   {
+    "id": 346,
+    "title": "[테슬라 연대기] 테슬라의 보험업 진출과 데이터 기반 요율 산정: 커넥티드 카 데이터가 보험 시장을 파괴하는 방식",
+    "slug": "tesla-insurance-data-driven-disruption-analysis",
+    "category_id": 1,
+    "category_name": "테슬라 최신 뉴스",
+    "url": "https://trip-now.kr/tesla-insurance-data-driven-disruption-analysis/",
+    "tags": [
+      "테슬라",
+      "전기차",
+      "자율주행",
+      "모빌리티"
+    ],
+    "published_at": "2026-10-17T02:57:04.005Z",
+    "date_formatted": "2026년 10월 17일"
+  },
+  {
     "id": 345,
     "title": "[테슬라 연대기] 테슬라 하드웨어 4.0(HW4) vs HW3: 자율주행 성능의 임계점과 오너의 선택 기준",
     "slug": "tesla-hardware-4-vs-3-analysis-autonomous-driving",
