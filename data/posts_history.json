@@ -1,5 +1,21 @@
 [
   {
+    "id": 348,
+    "title": "[테슬라 연대기] 슈퍼차저 V4와 NACS 생태계의 패권: 글로벌 완성차 제조사들의 합류가 의미하는 것",
+    "slug": "tesla-supercharger-v4-nacs-ecosystem-analysis",
+    "category_id": 214,
+    "category_name": "배터리 & 슈퍼차저",
+    "url": "https://trip-now.kr/tesla-supercharger-v4-nacs-ecosystem-analysis/",
+    "tags": [
+      "테슬라",
+      "전기차",
+      "자율주행",
+      "모빌리티"
+    ],
+    "published_at": "2026-10-19T03:12:04.408Z",
+    "date_formatted": "2026년 10월 19일"
+  },
+  {
     "id": 347,
     "title": "[테슬라 연대기] 기가팩토리 무인화의 완성: 테슬라 옵티머스 2세대가 가속화할 제조업의 지각변동",
     "slug": "tesla-optimus-gen2-factory-automation-analysis",
