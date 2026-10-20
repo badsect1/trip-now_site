@@ -1,5 +1,22 @@
 [
   {
+    "id": 349,
+    "title": "[테슬라 연대기] 테슬라 사이버트럭 1년 실운행 리포트: 48V 아키텍처와 스티어 바이 와이어의 혁신과 과제",
+    "slug": "tesla-cybertruck-1-year-ownership-review-48v-steer-by-wire",
+    "category_id": 213,
+    "category_name": "모델별 심층 가이드",
+    "url": "https://trip-now.kr/tesla-cybertruck-1-year-ownership-review-48v-steer-by-wire/",
+    "tags": [
+      "테슬라",
+      "사이버트럭",
+      "48V아키텍처",
+      "스티어바이와이어",
+      "전기차리뷰"
+    ],
+    "published_at": "2026-10-20T03:21:00.178Z",
+    "date_formatted": "2026년 10월 20일"
+  },
+  {
     "id": 348,
     "title": "[테슬라 연대기] 슈퍼차저 V4와 NACS 생태계의 패권: 글로벌 완성차 제조사들의 합류가 의미하는 것",
     "slug": "tesla-supercharger-v4-nacs-ecosystem-analysis",
