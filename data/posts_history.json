@@ -1,5 +1,21 @@
 [
   {
+    "id": 351,
+    "title": "[테슬라 연대기] 테슬라 FSD V13의 진화: 엔드투엔드 신경망이 열어갈 완전 무인화의 변곡점",
+    "slug": "tesla-fsd-v13-end-to-end-neural-network-analysis",
+    "category_id": 212,
+    "category_name": "FSD & 자율주행",
+    "url": "https://trip-now.kr/tesla-fsd-v13-end-to-end-neural-network-analysis/",
+    "tags": [
+      "테슬라",
+      "전기차",
+      "자율주행",
+      "모빌리티"
+    ],
+    "published_at": "2026-10-22T03:14:46.339Z",
+    "date_formatted": "2026년 10월 22일"
+  },
+  {
     "id": 350,
     "title": "[테슬라 연대기] 모델 2로 향하는 관문: 언박스드 프로세스와 차세대 플랫폼의 제조 혁명",
     "slug": "tesla-unboxed-process-and-next-gen-platform-analysis",
