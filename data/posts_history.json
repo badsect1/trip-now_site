@@ -1,5 +1,22 @@
 [
   {
+    "id": 352,
+    "title": "[테슬라 연대기] 테슬라 보험업의 미래: 커넥티드 카 데이터가 만드는 차세대 리스크 평가 모델",
+    "slug": "tesla-insurance-data-driven-risk-assessment",
+    "category_id": 1,
+    "category_name": "테슬라 최신 뉴스",
+    "url": "https://trip-now.kr/tesla-insurance-data-driven-risk-assessment/",
+    "tags": [
+      "테슬라",
+      "테슬라보험",
+      "커넥티드카",
+      "데이터분석",
+      "모빌리티혁신"
+    ],
+    "published_at": "2026-10-23T03:20:37.281Z",
+    "date_formatted": "2026년 10월 23일"
+  },
+  {
     "id": 351,
     "title": "[테슬라 연대기] 테슬라 FSD V13의 진화: 엔드투엔드 신경망이 열어갈 완전 무인화의 변곡점",
     "slug": "tesla-fsd-v13-end-to-end-neural-network-analysis",
