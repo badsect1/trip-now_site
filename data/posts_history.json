@@ -1,5 +1,22 @@
 [
   {
+    "id": 359,
+    "title": "[테슬라 연대기] 테슬라 모델 3·Y 하이랜드·주니퍼의 LFP vs NCM 배터리 심층 분석: 겨울철 전비와 장기 내구성을 중심으로",
+    "slug": "tesla-model-3-y-lfp-ncm-battery-comparison-guide",
+    "category_id": 213,
+    "category_name": "모델별 심층 가이드",
+    "url": "https://trip-now.kr/tesla-model-3-y-lfp-ncm-battery-comparison-guide/",
+    "tags": [
+      "테슬라",
+      "모델3",
+      "모델Y",
+      "LFP배터리",
+      "NCM배터리"
+    ],
+    "published_at": "2026-10-30T04:19:46.023Z",
+    "date_formatted": "2026년 10월 30일"
+  },
+  {
     "id": 358,
     "title": "[테슬라 연대기] 테슬라 모델 3·Y 매뉴얼의 FSD 삭제가 의미하는 것: '초지능' 기반의 새로운 자율주행 패러다임",
     "slug": "tesla-manual-fsd-to-super-intelligence-shift-analysis",
