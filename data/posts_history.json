@@ -1,5 +1,22 @@
 [
   {
+    "id": 365,
+    "title": "[테슬라 연대기] 테슬라 모델 Y 주니퍼(Juniper) 페이스리프트: 승차감과 정숙성의 비약적 진화",
+    "slug": "tesla-model-y-juniper-facelift-analysis",
+    "category_id": 213,
+    "category_name": "모델별 심층 가이드",
+    "url": "https://trip-now.kr/tesla-model-y-juniper-facelift-analysis/",
+    "tags": [
+      "테슬라",
+      "모델Y",
+      "주니퍼",
+      "페이스리프트",
+      "전기차"
+    ],
+    "published_at": "2026-11-05T05:02:23.928Z",
+    "date_formatted": "2026년 11월 5일"
+  },
+  {
     "id": 364,
     "title": "[테슬라 연대기] 테슬라 FSD V13 엔드투엔드 신경망의 진화: 완전 무인화로 가는 치명적 도약",
     "slug": "tesla-fsd-v13-end-to-end-neural-network-analysis",
