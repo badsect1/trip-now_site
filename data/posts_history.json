@@ -1,5 +1,21 @@
 [
   {
+    "id": 378,
+    "title": "[테슬라 연대기] 테슬라 FSD V13의 엔드투엔드 신경망: 인간 개입 없는 완전 무인화의 변곡점",
+    "slug": "tesla-fsd-v13-end-to-end-neural-network-analysis",
+    "category_id": 212,
+    "category_name": "FSD & 자율주행",
+    "url": "https://trip-now.kr/tesla-fsd-v13-end-to-end-neural-network-analysis/",
+    "tags": [
+      "테슬라",
+      "전기차",
+      "자율주행",
+      "모빌리티"
+    ],
+    "published_at": "2026-11-18T05:52:36.434Z",
+    "date_formatted": "2026년 11월 18일"
+  },
+  {
     "id": 377,
     "title": "[테슬라 연대기] 독일 기가팩토리의 사이버캡 생산 거점화: 유럽 모빌리티 시장의 게임 체인저",
     "slug": "tesla-gigafactory-berlin-cybercab-production-strategy",
