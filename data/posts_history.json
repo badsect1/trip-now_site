@@ -1,5 +1,22 @@
 [
   {
+    "id": 380,
+    "title": "[테슬라 연대기] 휴머노이드 로봇 옵티머스 2세대: 기가팩토리 무인 생산의 게임 체인저",
+    "slug": "tesla-optimus-gen2-gigafactory-automation",
+    "category_id": 215,
+    "category_name": "로보택시 & 미래 비전",
+    "url": "https://trip-now.kr/tesla-optimus-gen2-gigafactory-automation/",
+    "tags": [
+      "테슬라",
+      "옵티머스",
+      "휴머노이드로봇",
+      "기가팩토리",
+      "무인생산"
+    ],
+    "published_at": "2026-11-20T05:40:56.878Z",
+    "date_formatted": "2026년 11월 20일"
+  },
+  {
     "id": 379,
     "title": "[테슬라 연대기] 테슬라 모델 Y 주니퍼(Juniper) 페이스리프트: 승차감과 정숙성의 비약적 진화",
     "slug": "tesla-model-y-juniper-facelift-analysis",
